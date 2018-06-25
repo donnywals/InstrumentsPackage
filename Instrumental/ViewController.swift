@@ -26,10 +26,6 @@ class ViewController: UIViewController {
 
     tableView.dataSource = self
     tableView.delegate = self
-
-    [[1, 2], [2, 3]].enumerated().map { index, element in
-      print(index, element)
-    }
   }
 }
 
@@ -60,12 +56,12 @@ extension ViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     let id = OSSignpostID(log: logger, object: cell)
     os_signpost(type: .end, log: logger, name: "Parsing", signpostID: id, "Parsing done")
-    os_signpost(type: .begin, log: logger, name: "Cell Display", signpostID: id, "Will display indexPath: %@", "\(indexPath.row)")
+    os_signpost(type: .begin, log: logger, name: "Cell Display", signpostID: id, "Show:%{public}@", "\(indexPath.row)")
   }
 
   func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     let id = OSSignpostID(log: logger, object: cell)
-    os_signpost(type: .end, log: logger, name: "Cell Display", signpostID: id, "Did end displaying indexPath: %@", "\(indexPath)")
+    os_signpost(type: .end, log: logger, name: "Cell Display", signpostID: id, "End:%{public}@", "\(indexPath.row)")
   }
 }
 
