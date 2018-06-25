@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		97530F9D20D92AEE00EDF27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97530F9C20D92AEE00EDF27A /* AppDelegate.swift */; };
 		97530F9F20D92AEE00EDF27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97530F9E20D92AEE00EDF27A /* ViewController.swift */; };
-		97530FA220D92AEE00EDF27A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97530FA020D92AEE00EDF27A /* Main.storyboard */; };
 		97530FA420D92AF300EDF27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97530FA320D92AF300EDF27A /* Assets.xcassets */; };
 		97530FA720D92AF300EDF27A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97530FA520D92AF300EDF27A /* LaunchScreen.storyboard */; };
 		97530FB220D92AF300EDF27A /* InstrumentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97530FB120D92AF300EDF27A /* InstrumentalTests.swift */; };
+		97AE053B20DA49EB00AB17DF /* DWInstr.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 97AE053A20DA49EB00AB17DF /* DWInstr.instrpkg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,14 @@
 		97530F9920D92AEE00EDF27A /* Instrumental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instrumental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97530F9C20D92AEE00EDF27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97530F9E20D92AEE00EDF27A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		97530FA120D92AEE00EDF27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97530FA320D92AF300EDF27A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97530FA620D92AF300EDF27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97530FA820D92AF300EDF27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97530FAD20D92AF300EDF27A /* InstrumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstrumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97530FB120D92AF300EDF27A /* InstrumentalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentalTests.swift; sourceTree = "<group>"; };
 		97530FB320D92AF300EDF27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97AE053820DA49EB00AB17DF /* DWInstr.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = DWInstr.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AE053A20DA49EB00AB17DF /* DWInstr.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = DWInstr.instrpkg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			children = (
 				97530F9B20D92AEE00EDF27A /* Instrumental */,
 				97530FB020D92AF300EDF27A /* InstrumentalTests */,
+				97AE053920DA49EB00AB17DF /* DWInstr */,
 				97530F9A20D92AEE00EDF27A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +72,7 @@
 			children = (
 				97530F9920D92AEE00EDF27A /* Instrumental.app */,
 				97530FAD20D92AF300EDF27A /* InstrumentalTests.xctest */,
+				97AE053820DA49EB00AB17DF /* DWInstr.instrdst */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,7 +82,6 @@
 			children = (
 				97530F9C20D92AEE00EDF27A /* AppDelegate.swift */,
 				97530F9E20D92AEE00EDF27A /* ViewController.swift */,
-				97530FA020D92AEE00EDF27A /* Main.storyboard */,
 				97530FA320D92AF300EDF27A /* Assets.xcassets */,
 				97530FA520D92AF300EDF27A /* LaunchScreen.storyboard */,
 				97530FA820D92AF300EDF27A /* Info.plist */,
@@ -94,6 +96,14 @@
 				97530FB320D92AF300EDF27A /* Info.plist */,
 			);
 			path = InstrumentalTests;
+			sourceTree = "<group>";
+		};
+		97AE053920DA49EB00AB17DF /* DWInstr */ = {
+			isa = PBXGroup;
+			children = (
+				97AE053A20DA49EB00AB17DF /* DWInstr.instrpkg */,
+			);
+			path = DWInstr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +144,21 @@
 			productReference = 97530FAD20D92AF300EDF27A /* InstrumentalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		97AE053720DA49EB00AB17DF /* DWInstr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97AE053E20DA49EB00AB17DF /* Build configuration list for PBXNativeTarget "DWInstr" */;
+			buildPhases = (
+				97AE053620DA49EB00AB17DF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DWInstr;
+			productName = DWInstr;
+			productReference = 97AE053820DA49EB00AB17DF /* DWInstr.instrdst */;
+			productType = "com.apple.product-type.instruments-package";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +175,9 @@
 					97530FAC20D92AF300EDF27A = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 97530F9820D92AEE00EDF27A;
+					};
+					97AE053720DA49EB00AB17DF = {
+						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
@@ -168,6 +196,7 @@
 			targets = (
 				97530F9820D92AEE00EDF27A /* Instrumental */,
 				97530FAC20D92AF300EDF27A /* InstrumentalTests */,
+				97AE053720DA49EB00AB17DF /* DWInstr */,
 			);
 		};
 /* End PBXProject section */
@@ -179,7 +208,6 @@
 			files = (
 				97530FA720D92AF300EDF27A /* LaunchScreen.storyboard in Resources */,
 				97530FA420D92AF300EDF27A /* Assets.xcassets in Resources */,
-				97530FA220D92AEE00EDF27A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +238,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		97AE053620DA49EB00AB17DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AE053B20DA49EB00AB17DF /* DWInstr.instrpkg in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -221,14 +257,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		97530FA020D92AEE00EDF27A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97530FA120D92AEE00EDF27A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		97530FA520D92AF300EDF27A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JMM8JMG3H;
 				INFOPLIST_FILE = Instrumental/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JMM8JMG3H;
 				INFOPLIST_FILE = Instrumental/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,6 +462,28 @@
 			};
 			name = Release;
 		};
+		97AE053C20DA49EB00AB17DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Debug;
+		};
+		97AE053D20DA49EB00AB17DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,6 +510,15 @@
 			buildConfigurations = (
 				97530FBA20D92AF300EDF27A /* Debug */,
 				97530FBB20D92AF300EDF27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97AE053E20DA49EB00AB17DF /* Build configuration list for PBXNativeTarget "DWInstr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AE053C20DA49EB00AB17DF /* Debug */,
+				97AE053D20DA49EB00AB17DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

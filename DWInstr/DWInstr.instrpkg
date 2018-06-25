@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package>
+  <id>com.bamtech.DWInstr</id>
+  <title>DWInstr</title>
+  <owner>
+    <name>Donny Wals</name>
+  </owner>
+
+  <os-signpost-interval-schema>
+    <id>json-parse</id>
+    <title>JSON Parse</title>
+
+    <subsystem>"com.dw.json"</subsystem>
+    <category>"Networking"</category>
+    <name>"Parsing"</name>
+
+    <start-pattern>
+      <message>"Parsing SIZE:" ?data-size</message>
+    </start-pattern>
+
+    <end-pattern>
+      <message>"Parsing done"</message>
+    </end-pattern>
+
+    <column>
+      <mnemonic>data-size</mnemonic>
+      <title>JSON Size</title>
+      <type>size-in-bytes</type>
+      <expression>?data-size</expression>
+    </column>
+  </os-signpost-interval-schema>
+
+  <instrument>
+    <id>com.dw.tick</id>
+    <title>Ticks</title>
+    <category>Behavior</category>
+    <purpose>Instrument drawing tick every 10 ms</purpose>
+    <icon>Generic</icon>
+
+    <create-table>
+      <id>size-table</id>
+      <schema-ref>json-parse</schema-ref>
+    </create-table>
+
+    <graph>
+      <title>Ticks</title>
+      <lane>
+        <title>Ticks</title>
+        <table-ref>size-table</table-ref>
+
+        <plot>
+          <value-from>data-size</value-from>
+        </plot>
+      </lane>
+    </graph>
+
+    <list>
+      <title>Ticks</title>
+      <table-ref>size-table</table-ref>
+      <column>data-size</column>
+    </list>
+  </instrument>
+</package>
