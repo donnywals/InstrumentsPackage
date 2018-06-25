@@ -12,21 +12,21 @@
 
     <subsystem>"com.dw.json"</subsystem>
     <category>"Networking"</category>
-    <name>"Parsing"</name>
+    <name>"Cell Display"</name>
 
     <start-pattern>
-      <message>"Parsing SIZE:" ?data-size</message>
+      <message>"Show:" ?data-row</message>
     </start-pattern>
 
     <end-pattern>
-      <message>"Parsing done"</message>
+        <message>"End:" ?data-row</message>
     </end-pattern>
 
     <column>
-      <mnemonic>data-size</mnemonic>
-      <title>JSON Size</title>
-      <type>size-in-bytes</type>
-      <expression>?data-size</expression>
+      <mnemonic>data-row</mnemonic>
+      <title>Row</title>
+      <type>string</type>
+      <expression>?data-row</expression>
     </column>
   </os-signpost-interval-schema>
 
@@ -38,7 +38,7 @@
     <icon>Generic</icon>
 
     <create-table>
-      <id>size-table</id>
+      <id>row-table</id>
       <schema-ref>json-parse</schema-ref>
     </create-table>
 
@@ -46,18 +46,18 @@
       <title>Ticks</title>
       <lane>
         <title>Ticks</title>
-        <table-ref>size-table</table-ref>
+        <table-ref>row-table</table-ref>
 
         <plot>
-          <value-from>data-size</value-from>
+          <value-from>data-row</value-from>
         </plot>
       </lane>
     </graph>
 
     <list>
       <title>Ticks</title>
-      <table-ref>size-table</table-ref>
-      <column>data-size</column>
+      <table-ref>row-table</table-ref>
+      <column>data-row</column>
     </list>
   </instrument>
 </package>
