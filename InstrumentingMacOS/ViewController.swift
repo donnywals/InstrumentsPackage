@@ -34,9 +34,9 @@ class ViewController: NSViewController {
     let signPostID = OSSignpostID(log: logger, object: button)
     os_signpost(type: .begin, log: logger, name: "click", signpostID: signPostID, "Clicked:%{public}@", "\(count)")
 
-    let delay = Double(arc4random_uniform(10))
+    let delay = Double(arc4random_uniform(3))
     DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + delay) {
-      os_signpost(type: .begin, log: self.logger, name: "click", signpostID: signPostID, "Ended:%{public}@", "\(delay)")
+      os_signpost(type: .end, log: self.logger, name: "click", signpostID: signPostID, "Ended:%{public}@", "\(delay)")
     }
   }
 }

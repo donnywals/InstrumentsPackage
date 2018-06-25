@@ -7,57 +7,68 @@
   </owner>
 
   <os-signpost-interval-schema>
-    <id>json-parse</id>
-    <title>JSON Parse</title>
+    <id>click-track</id>
+    <title>Click tracker</title>
 
-    <subsystem>"com.dw.json"</subsystem>
-    <category>"Networking"</category>
-    <name>"Cell Display"</name>
+    <subsystem>"com.dw"</subsystem>
+    <category>"demo"</category>
+    <name>"Button Clicking"</name>
 
     <start-pattern>
-      <message>"Show:" ?data-row</message>
+      <message>"Clicked:"?click</message>
     </start-pattern>
 
     <end-pattern>
-        <message>"End:" ?data-row</message>
+        <message>"Ended:"?click-duration</message>
     </end-pattern>
 
     <column>
-      <mnemonic>data-row</mnemonic>
-      <title>Row</title>
+      <mnemonic>click</mnemonic>
+      <title>Click</title>
       <type>string</type>
-      <expression>?data-row</expression>
+      <expression>?click</expression>
+    </column>
+    <column>
+        <mnemonic>click-duration</mnemonic>
+        <title>Duration</title>
+        <type>string</type>
+        <expression>?click-duration</expression>
     </column>
   </os-signpost-interval-schema>
 
   <instrument>
-    <id>com.dw.tick</id>
-    <title>Ticks</title>
+    <id>buttontracker</id>
+    <title>Button Tracker</title>
     <category>Behavior</category>
-    <purpose>Instrument drawing tick every 10 ms</purpose>
+    <purpose>Instrument tracking btn clicks</purpose>
     <icon>Generic</icon>
 
     <create-table>
-      <id>row-table</id>
-      <schema-ref>json-parse</schema-ref>
+      <id>click-table</id>
+      <schema-ref>click-track</schema-ref>
     </create-table>
 
     <graph>
-      <title>Ticks</title>
+      <title>Clicks</title>
       <lane>
-        <title>Ticks</title>
-        <table-ref>row-table</table-ref>
+        <title>Clicks</title>
+        <table-ref>click-table</table-ref>
 
         <plot>
-          <value-from>data-row</value-from>
+          <value-from>click</value-from>
         </plot>
       </lane>
     </graph>
 
     <list>
-      <title>Ticks</title>
-      <table-ref>row-table</table-ref>
-      <column>data-row</column>
+      <title>Clicks</title>
+      <table-ref>click-table</table-ref>
+      <column>click</column>
+    </list>
+    <list>
+        <title>Durations</title>
+        <table-ref>click-table</table-ref>
+        <column>click-duration</column>
     </list>
   </instrument>
 </package>
