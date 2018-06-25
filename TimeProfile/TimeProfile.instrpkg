@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package>
+	<id>com.bamtech.TimeProfile</id>
+	<title>TimeProfile</title>
+	<owner>
+		<name>Donny Wals</name>
+	</owner>
+
+  <import-schema>activity-monitor-process-live</import-schema>
+
+  <instrument>
+    <id>com.dw.sysmon</id>
+    <title>Process duration</title>
+    <category>Behavior</category>
+    <purpose>Instrument getting durations</purpose>
+    <icon>Generic</icon>
+
+    <create-table>
+      <id>dw-table</id>
+      <schema-ref>activity-monitor-process-live</schema-ref>
+    </create-table>
+
+    <graph>
+      <title>Process</title>
+      <lane>
+        <title>Process</title>
+        <table-ref>dw-table</table-ref>
+
+        <plot>
+          <value-from>duration</value-from>
+        </plot>
+      </lane>
+    </graph>
+
+    <list>
+      <title>Ticks</title>
+      <table-ref>dw-table</table-ref>
+      <column>duration</column>
+      <column>pid</column>
+    </list>
+  </instrument>
+</package>

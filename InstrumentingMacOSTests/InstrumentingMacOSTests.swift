@@ -1,15 +1,15 @@
 //
-//  InstrumentalTests.swift
-//  InstrumentalTests
+//  InstrumentingMacOSTests.swift
+//  InstrumentingMacOSTests
 //
-//  Created by Donny Wals on 19/06/2018.
+//  Created by Donny Wals on 25/06/2018.
 //  Copyright © 2018 BAMTech LLC. All rights reserved.
 //
 
 import XCTest
-@testable import Instrumental
+@testable import InstrumentingMacOS
 
-class InstrumentalTests: XCTestCase {
+class InstrumentingMacOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -11,17 +11,22 @@
 		97530F9F20D92AEE00EDF27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97530F9E20D92AEE00EDF27A /* ViewController.swift */; };
 		97530FA420D92AF300EDF27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97530FA320D92AF300EDF27A /* Assets.xcassets */; };
 		97530FA720D92AF300EDF27A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97530FA520D92AF300EDF27A /* LaunchScreen.storyboard */; };
-		97530FB220D92AF300EDF27A /* InstrumentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97530FB120D92AF300EDF27A /* InstrumentalTests.swift */; };
+		97A9A24D20E0EE7D009FAF59 /* TimeProfile.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A24C20E0EE7D009FAF59 /* TimeProfile.instrpkg */; };
+		97A9A25820E11350009FAF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A25720E11350009FAF59 /* AppDelegate.swift */; };
+		97A9A25A20E11351009FAF59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A25920E11351009FAF59 /* ViewController.swift */; };
+		97A9A25C20E11354009FAF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A9A25B20E11354009FAF59 /* Assets.xcassets */; };
+		97A9A25F20E11354009FAF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A9A25D20E11354009FAF59 /* Main.storyboard */; };
+		97A9A26B20E11354009FAF59 /* InstrumentingMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A9A26A20E11354009FAF59 /* InstrumentingMacOSTests.swift */; };
 		97AE053B20DA49EB00AB17DF /* DWInstr.instrpkg in Sources */ = {isa = PBXBuildFile; fileRef = 97AE053A20DA49EB00AB17DF /* DWInstr.instrpkg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		97530FAE20D92AF300EDF27A /* PBXContainerItemProxy */ = {
+		97A9A26720E11354009FAF59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97530F9120D92AEE00EDF27A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97530F9820D92AEE00EDF27A;
-			remoteInfo = Instrumental;
+			remoteGlobalIDString = 97A9A25420E11350009FAF59;
+			remoteInfo = InstrumentingMacOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -32,9 +37,18 @@
 		97530FA320D92AF300EDF27A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97530FA620D92AF300EDF27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97530FA820D92AF300EDF27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97530FAD20D92AF300EDF27A /* InstrumentalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstrumentalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97530FB120D92AF300EDF27A /* InstrumentalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentalTests.swift; sourceTree = "<group>"; };
-		97530FB320D92AF300EDF27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A9A24A20E0EE7C009FAF59 /* TimeProfile.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = TimeProfile.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A9A24C20E0EE7D009FAF59 /* TimeProfile.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = TimeProfile.instrpkg; sourceTree = "<group>"; };
+		97A9A25520E11350009FAF59 /* InstrumentingMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstrumentingMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A9A25720E11350009FAF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97A9A25920E11351009FAF59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97A9A25B20E11354009FAF59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97A9A25E20E11354009FAF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97A9A26020E11354009FAF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A9A26120E11354009FAF59 /* InstrumentingMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InstrumentingMacOS.entitlements; sourceTree = "<group>"; };
+		97A9A26620E11354009FAF59 /* InstrumentingMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstrumentingMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A9A26A20E11354009FAF59 /* InstrumentingMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentingMacOSTests.swift; sourceTree = "<group>"; };
+		97A9A26C20E11354009FAF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97AE053820DA49EB00AB17DF /* DWInstr.instrdst */ = {isa = PBXFileReference; explicitFileType = com.apple.instruments.instrdst; includeInIndex = 0; path = DWInstr.instrdst; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AE053A20DA49EB00AB17DF /* DWInstr.instrpkg */ = {isa = PBXFileReference; lastKnownFileType = "com.apple.instruments.package-definition"; path = DWInstr.instrpkg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,7 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97530FAA20D92AF300EDF27A /* Frameworks */ = {
+		97A9A25220E11350009FAF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A26320E11354009FAF59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,9 +81,11 @@
 		97530F9020D92AEE00EDF27A = {
 			isa = PBXGroup;
 			children = (
+				97A9A25620E11350009FAF59 /* InstrumentingMacOS */,
+				97A9A26920E11354009FAF59 /* InstrumentingMacOSTests */,
 				97530F9B20D92AEE00EDF27A /* Instrumental */,
-				97530FB020D92AF300EDF27A /* InstrumentalTests */,
 				97AE053920DA49EB00AB17DF /* DWInstr */,
+				97A9A24B20E0EE7D009FAF59 /* TimeProfile */,
 				97530F9A20D92AEE00EDF27A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,8 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				97530F9920D92AEE00EDF27A /* Instrumental.app */,
-				97530FAD20D92AF300EDF27A /* InstrumentalTests.xctest */,
 				97AE053820DA49EB00AB17DF /* DWInstr.instrdst */,
+				97A9A24A20E0EE7C009FAF59 /* TimeProfile.instrdst */,
+				97A9A25520E11350009FAF59 /* InstrumentingMacOS.app */,
+				97A9A26620E11354009FAF59 /* InstrumentingMacOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,13 +114,34 @@
 			path = Instrumental;
 			sourceTree = "<group>";
 		};
-		97530FB020D92AF300EDF27A /* InstrumentalTests */ = {
+		97A9A24B20E0EE7D009FAF59 /* TimeProfile */ = {
 			isa = PBXGroup;
 			children = (
-				97530FB120D92AF300EDF27A /* InstrumentalTests.swift */,
-				97530FB320D92AF300EDF27A /* Info.plist */,
+				97A9A24C20E0EE7D009FAF59 /* TimeProfile.instrpkg */,
 			);
-			path = InstrumentalTests;
+			path = TimeProfile;
+			sourceTree = "<group>";
+		};
+		97A9A25620E11350009FAF59 /* InstrumentingMacOS */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A25720E11350009FAF59 /* AppDelegate.swift */,
+				97A9A25920E11351009FAF59 /* ViewController.swift */,
+				97A9A25B20E11354009FAF59 /* Assets.xcassets */,
+				97A9A25D20E11354009FAF59 /* Main.storyboard */,
+				97A9A26020E11354009FAF59 /* Info.plist */,
+				97A9A26120E11354009FAF59 /* InstrumentingMacOS.entitlements */,
+			);
+			path = InstrumentingMacOS;
+			sourceTree = "<group>";
+		};
+		97A9A26920E11354009FAF59 /* InstrumentingMacOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				97A9A26A20E11354009FAF59 /* InstrumentingMacOSTests.swift */,
+				97A9A26C20E11354009FAF59 /* Info.plist */,
+			);
+			path = InstrumentingMacOSTests;
 			sourceTree = "<group>";
 		};
 		97AE053920DA49EB00AB17DF /* DWInstr */ = {
@@ -126,22 +172,54 @@
 			productReference = 97530F9920D92AEE00EDF27A /* Instrumental.app */;
 			productType = "com.apple.product-type.application";
 		};
-		97530FAC20D92AF300EDF27A /* InstrumentalTests */ = {
+		97A9A24920E0EE7C009FAF59 /* TimeProfile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97530FB920D92AF300EDF27A /* Build configuration list for PBXNativeTarget "InstrumentalTests" */;
+			buildConfigurationList = 97A9A24E20E0EE7D009FAF59 /* Build configuration list for PBXNativeTarget "TimeProfile" */;
 			buildPhases = (
-				97530FA920D92AF300EDF27A /* Sources */,
-				97530FAA20D92AF300EDF27A /* Frameworks */,
-				97530FAB20D92AF300EDF27A /* Resources */,
+				97A9A24820E0EE7C009FAF59 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				97530FAF20D92AF300EDF27A /* PBXTargetDependency */,
 			);
-			name = InstrumentalTests;
-			productName = InstrumentalTests;
-			productReference = 97530FAD20D92AF300EDF27A /* InstrumentalTests.xctest */;
+			name = TimeProfile;
+			productName = TimeProfile;
+			productReference = 97A9A24A20E0EE7C009FAF59 /* TimeProfile.instrdst */;
+			productType = "com.apple.product-type.instruments-package";
+		};
+		97A9A25420E11350009FAF59 /* InstrumentingMacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A9A26D20E11354009FAF59 /* Build configuration list for PBXNativeTarget "InstrumentingMacOS" */;
+			buildPhases = (
+				97A9A25120E11350009FAF59 /* Sources */,
+				97A9A25220E11350009FAF59 /* Frameworks */,
+				97A9A25320E11350009FAF59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstrumentingMacOS;
+			productName = InstrumentingMacOS;
+			productReference = 97A9A25520E11350009FAF59 /* InstrumentingMacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97A9A26520E11354009FAF59 /* InstrumentingMacOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A9A27020E11354009FAF59 /* Build configuration list for PBXNativeTarget "InstrumentingMacOSTests" */;
+			buildPhases = (
+				97A9A26220E11354009FAF59 /* Sources */,
+				97A9A26320E11354009FAF59 /* Frameworks */,
+				97A9A26420E11354009FAF59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A9A26820E11354009FAF59 /* PBXTargetDependency */,
+			);
+			name = InstrumentingMacOSTests;
+			productName = InstrumentingMacOSTests;
+			productReference = 97A9A26620E11354009FAF59 /* InstrumentingMacOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		97AE053720DA49EB00AB17DF /* DWInstr */ = {
@@ -165,16 +243,22 @@
 		97530F9120D92AEE00EDF27A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "BAMTech LLC.";
 				TargetAttributes = {
 					97530F9820D92AEE00EDF27A = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
-					97530FAC20D92AF300EDF27A = {
-						CreatedOnToolsVersion = 9.4.1;
-						TestTargetID = 97530F9820D92AEE00EDF27A;
+					97A9A24920E0EE7C009FAF59 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					97A9A25420E11350009FAF59 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					97A9A26520E11354009FAF59 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 97A9A25420E11350009FAF59;
 					};
 					97AE053720DA49EB00AB17DF = {
 						CreatedOnToolsVersion = 10.0;
@@ -195,8 +279,10 @@
 			projectRoot = "";
 			targets = (
 				97530F9820D92AEE00EDF27A /* Instrumental */,
-				97530FAC20D92AF300EDF27A /* InstrumentalTests */,
 				97AE053720DA49EB00AB17DF /* DWInstr */,
+				97A9A24920E0EE7C009FAF59 /* TimeProfile */,
+				97A9A25420E11350009FAF59 /* InstrumentingMacOS */,
+				97A9A26520E11354009FAF59 /* InstrumentingMacOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,7 +297,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97530FAB20D92AF300EDF27A /* Resources */ = {
+		97A9A25320E11350009FAF59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A9A25C20E11354009FAF59 /* Assets.xcassets in Resources */,
+				97A9A25F20E11354009FAF59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A26420E11354009FAF59 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,11 +325,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97530FA920D92AF300EDF27A /* Sources */ = {
+		97A9A24820E0EE7C009FAF59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97530FB220D92AF300EDF27A /* InstrumentalTests.swift in Sources */,
+				97A9A24D20E0EE7D009FAF59 /* TimeProfile.instrpkg in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A25120E11350009FAF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A9A25A20E11351009FAF59 /* ViewController.swift in Sources */,
+				97A9A25820E11350009FAF59 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A9A26220E11354009FAF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A9A26B20E11354009FAF59 /* InstrumentingMacOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +361,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		97530FAF20D92AF300EDF27A /* PBXTargetDependency */ = {
+		97A9A26820E11354009FAF59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 97530F9820D92AEE00EDF27A /* Instrumental */;
-			targetProxy = 97530FAE20D92AF300EDF27A /* PBXContainerItemProxy */;
+			target = 97A9A25420E11350009FAF59 /* InstrumentingMacOS */;
+			targetProxy = 97A9A26720E11354009FAF59 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -263,6 +375,14 @@
 				97530FA620D92AF300EDF27A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		97A9A25D20E11354009FAF59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97A9A25E20E11354009FAF59 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,45 +540,121 @@
 			};
 			name = Release;
 		};
-		97530FBA20D92AF300EDF27A /* Debug */ = {
+		97A9A24F20E0EE7D009FAF59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JMM8JMG3H;
-				INFOPLIST_FILE = InstrumentalTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bamtech.InstrumentalTests;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				INSTRUMENTS_PACKAGE_BUILDER_LINKED_PACKAGES = ActivityMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instrumental.app/Instrumental";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
-		97530FBB20D92AF300EDF27A /* Release */ = {
+		97A9A25020E0EE7D009FAF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Instruments/Packages";
+				INSTRUMENTS_PACKAGE_BUILDER_LINKED_PACKAGES = ActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "";
+			};
+			name = Release;
+		};
+		97A9A26E20E11354009FAF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InstrumentingMacOS/InstrumentingMacOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = InstrumentingMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamtech.InstrumentingMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		97A9A26F20E11354009FAF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InstrumentingMacOS/InstrumentingMacOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = InstrumentingMacOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamtech.InstrumentingMacOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		97A9A27120E11354009FAF59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4JMM8JMG3H;
-				INFOPLIST_FILE = InstrumentalTests/Info.plist;
+				INFOPLIST_FILE = InstrumentingMacOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bamtech.InstrumentalTests;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamtech.InstrumentingMacOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Instrumental.app/Instrumental";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstrumentingMacOS.app/Contents/MacOS/InstrumentingMacOS";
+			};
+			name = Debug;
+		};
+		97A9A27220E11354009FAF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4JMM8JMG3H;
+				INFOPLIST_FILE = InstrumentingMacOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamtech.InstrumentingMacOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstrumentingMacOS.app/Contents/MacOS/InstrumentingMacOS";
 			};
 			name = Release;
 		};
@@ -505,11 +701,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97530FB920D92AF300EDF27A /* Build configuration list for PBXNativeTarget "InstrumentalTests" */ = {
+		97A9A24E20E0EE7D009FAF59 /* Build configuration list for PBXNativeTarget "TimeProfile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97530FBA20D92AF300EDF27A /* Debug */,
-				97530FBB20D92AF300EDF27A /* Release */,
+				97A9A24F20E0EE7D009FAF59 /* Debug */,
+				97A9A25020E0EE7D009FAF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A9A26D20E11354009FAF59 /* Build configuration list for PBXNativeTarget "InstrumentingMacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A9A26E20E11354009FAF59 /* Debug */,
+				97A9A26F20E11354009FAF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A9A27020E11354009FAF59 /* Build configuration list for PBXNativeTarget "InstrumentingMacOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A9A27120E11354009FAF59 /* Debug */,
+				97A9A27220E11354009FAF59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
