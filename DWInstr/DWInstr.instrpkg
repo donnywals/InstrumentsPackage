@@ -11,28 +11,22 @@
     <title>Click tracker</title>
 
     <subsystem>"com.dw"</subsystem>
-    <category>"demo"</category>
-    <name>"Button Clicking"</name>
+    <category>"Behavior"</category>
+    <name>"Click"</name>
 
     <start-pattern>
-      <message>"Clicked:"?click</message>
+      <message>"Clicked at: " ?row</message>
     </start-pattern>
 
     <end-pattern>
-        <message>"Ended:"?click-duration</message>
+        <message>"Clicked at: " ?row</message>
     </end-pattern>
 
     <column>
       <mnemonic>click</mnemonic>
       <title>Click</title>
       <type>string</type>
-      <expression>?click</expression>
-    </column>
-    <column>
-        <mnemonic>click-duration</mnemonic>
-        <title>Duration</title>
-        <type>string</type>
-        <expression>?click-duration</expression>
+      <expression>?row</expression>
     </column>
   </os-signpost-interval-schema>
 
@@ -40,7 +34,7 @@
     <id>buttontracker</id>
     <title>Button Tracker</title>
     <category>Behavior</category>
-    <purpose>Instrument tracking btn clicks</purpose>
+    <purpose>Instrument tracking cell clicks</purpose>
     <icon>Generic</icon>
 
     <create-table>
@@ -64,11 +58,6 @@
       <title>Clicks</title>
       <table-ref>click-table</table-ref>
       <column>click</column>
-    </list>
-    <list>
-        <title>Durations</title>
-        <table-ref>click-table</table-ref>
-        <column>click-duration</column>
     </list>
   </instrument>
 </package>

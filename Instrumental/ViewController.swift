@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  static let logger = OSLog(subsystem: "com.dw", category: "Behavior")
+  static let id = OSSignpostID(log: ViewController.logger, object: self as AnyObject)
+    
   let tableView = UITableView()
 
   override func viewDidLoad() {
@@ -41,28 +44,19 @@ extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: DemoCell.identifier, for: indexPath)
     cell.textLabel?.text = "Cell at \(indexPath)"
-
-    let id = OSSignpostID(log: logger, object: cell)
-    os_signpost(type: .begin, log: logger, name: "Parsing", signpostID: id, "Parsing SIZE:%@", "256")
-
+    
     return cell
   }
 }
 
 import os.signpost
-let logger = OSLog(subsystem: "com.dw.json", category: "Networking")
 
 extension ViewController: UITableViewDelegate {
-  func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-    let id = OSSignpostID(log: logger, object: cell)
-    os_signpost(type: .end, log: logger, name: "Parsing", signpostID: id, "Parsing done")
-    os_signpost(type: .begin, log: logger, name: "Cell Display", signpostID: id, "Show:%{public}@", "\(indexPath.row)")
-  }
-
-  func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-    let id = OSSignpostID(log: logger, object: cell)
-    os_signpost(type: .end, log: logger, name: "Cell Display", signpostID: id, "End:%{public}@", "\(indexPath.row)")
-  }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        os_signpost(.begin, log: ViewController.logger, name: "Click", signpostID: ViewController.id, "Clicked at: %i", indexPath.row)
+        os_signpost(.end, log: ViewController.logger, name: "Click", signpostID: ViewController.id, "Clicked at: %i", indexPath.row)
+    }
 }
 
 class DemoCell: UITableViewCell {
